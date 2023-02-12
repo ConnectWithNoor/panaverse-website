@@ -1,6 +1,5 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
 
 const news = [
