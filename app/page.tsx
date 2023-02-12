@@ -1,4 +1,5 @@
 import Header from './{components}/header';
+import City from './{section}/city';
 import Feedback from './{section}/feedback';
 import Hero from './{section}/hero';
 import Join from './{section}/join';
@@ -16,6 +17,7 @@ export default function Home() {
       <Join />
       <Feedback />
       <Partner />
+      <City />
     </div>
   );
 }
