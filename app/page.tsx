@@ -1,15 +1,19 @@
 import Header from './{components}/header';
+import Feedback from './{section}/feedback';
 import Hero from './{section}/hero';
+import Join from './{section}/join';
 import LearnEarn from './{section}/learnEarn';
 
 export default function Home() {
   return (
     <div>
-      <div className='bg-gradient'>
+      <div className='hero-gradient'>
         <Header />
         <Hero />
       </div>
       <LearnEarn />
+      <Join />
+      <Feedback />
     </div>
   );
 }

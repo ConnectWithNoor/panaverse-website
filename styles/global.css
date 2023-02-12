@@ -20,11 +20,11 @@
 }
 
 @layer utilities {
-  .bg-gradient {
+  .hero-gradient {
     @apply h-[calc(100vh-100px)] bg-cover relative w-full;
   }
 
-  .bg-gradient::before {
+  .hero-gradient::before {
     content: '';
     position: absolute;
     top: 0;
@@ -41,7 +41,32 @@
     clip-path: polygon(100% 0, 100% 57%, 100% 97%, 0 90%, 0 0);
   }
 
+  .feedback-gradient {
+    @apply h-[calc(100vh-100px)] bg-cover relative w-full;
+  }
+
+  .feedback-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to left,
+        rgba(39, 39, 41, 0.52) 0%,
+        rgba(56, 141, 145, 0.73) 100%
+      ),
+      url('/feedback-bg.svg');
+    clip-path: polygon(100% 0, 100% 57%, 100% 90%, 0 97%, 0 0);
+  }
+
   .section {
-    @apply w-full h-full mt-20 container mx-auto px-4 mt-3;
+    @apply w-full h-full container mx-auto px-4 mt-3;
+  }
+
+  .indicator.active {
+    @apply bg-black;
   }
 }

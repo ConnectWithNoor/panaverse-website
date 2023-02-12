@@ -26,6 +26,9 @@ module.exports = {
       boxShadow: {
         'box-1': '0 4px 6px -6px #222',
       },
+      borderColor: {
+        'green-1': '#11AD8E',
+      },
     },
   },
   plugins: [],
