@@ -15,7 +15,9 @@ export default function Home() {
       </div>
       <LearnEarn />
       <Join />
-      <Feedback />
+      <div className='feedback-gradient'>
+        <Feedback />
+      </div>
       <Partner />
       <City />
     </div>

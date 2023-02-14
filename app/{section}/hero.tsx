@@ -8,23 +8,21 @@ import Button from '../{components}/button';
 function Hero() {
   return (
     <section className='section'>
-      <div className='flex flex-col md:flex-row jusify-between items-center'>
-        <div className='flex flex-col justify-center'>
-          <h4 className='text-sm font-light mt-4 underline decoration-emerald-200'>
+      <div className='flex flex-col md:flex-row justify-around items-center gap-x-5 gap-y-6'>
+        <div className='flex flex-col items-center justify-center md:basis-2/3 gap-y-6 '>
+          <h4 className='text-sm md:text-base font-light underline decoration-emerald-200'>
             Presidential Initiative for Artificial Intelligence and Computing
             (PIAIC)
           </h4>
-          <div className='flex flex-col justify-between'>
-            <h3 className='text-3xl font-bold mt-8'>
-              Become <span className='text-green-1'>Certified Web 3.0</span> and{' '}
-              <span className='text-green-1'>Metaverse</span> Developer
-            </h3>
-            <p className='text-base font-normal mt-5'>
-              Launch Your Dev Career With Web 3 and Metaverse Getting Ready for
-              the Next Generation of the Internet
-            </p>
-          </div>
-          <div className='flex flex-col  items-center mt-3'>
+          <h3 className='text-3xl md:text-4xl font-bold '>
+            Become <span className='text-green-1'>Certified Web 3.0</span> and{' '}
+            <span className='text-green-1'>Metaverse</span> Developer
+          </h3>
+          <p className='text-base font-normal md:text-lg '>
+            Launch Your Dev Career With Web 3 and Metaverse Getting Ready for
+            the Next Generation of the Internet
+          </p>
+          <div className='flex flex-col  items-center '>
             <Image
               src='/chevron-down.svg'
               width={30}
@@ -37,12 +35,11 @@ function Hero() {
             </Button>
           </div>
         </div>
-
-        <div className='hidden md:block mt-32'>
+        <div className='hidden md:flex justify-end md:basis-2/3 '>
           <Image
             src='/progamming.svg'
-            width={500}
-            height={500}
+            width={600}
+            height={600}
             alt='hero-image'
           />
         </div>

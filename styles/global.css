@@ -21,7 +21,7 @@
 
 @layer utilities {
   .hero-gradient {
-    @apply h-[calc(100vh-80px)] bg-cover relative w-full;
+    @apply bg-cover relative w-full;
   }
 
   .hero-gradient::before {
@@ -36,7 +36,7 @@
   }
 
   .feedback-gradient {
-    @apply h-[calc(100vh-100px)] bg-cover relative w-full;
+    @apply h-[640px] bg-cover relative w-full;
   }
 
   .feedback-gradient::before {
@@ -53,11 +53,11 @@
         rgba(56, 141, 145, 0.73) 100%
       ),
       url('/feedback-bg.svg');
-    clip-path: polygon(100% 0, 100% 57%, 100% 90%, 0 97%, 0 0);
+    clip-path: polygon(100% 0, 100% 57%, 100% 85%, 0 95%, 0 0);
   }
 
   .section {
-    @apply w-full h-full container mx-auto px-4 mt-3 overflow-hidden;
+    @apply w-full h-full container mx-auto px-4 mt-3;
   }
 
   .indicator.active {
@@ -66,7 +66,36 @@
 
   @media (min-width: 320px) {
     .hero-gradient::before {
-      clip-path: polygon(100% 0, 100% 57%, 100% 100%, 0 96%, 0 0);
+      clip-path: polygon(100% 0, 100% 57%, 100% 86%, 0 96%, 0 0);
+    }
+
+    .illustration-dev {
+      left: 0.4rem;
+    }
+  }
+
+  @media (min-height: 620px) {
+    .hero-gradient {
+      @apply h-[calc(100vh-200px)];
+    }
+
+    .feedback-gradient {
+    }
+  }
+
+  @media (min-height: 900px) {
+    .hero-gradient {
+      @apply h-[calc(100vh-250px)];
+    }
+
+    .hero-gradient::before {
+      clip-path: polygon(100% 0, 100% 57%, 100% 100%, 0 95%, 0 0);
+    }
+  }
+
+  @media (min-width: 360px) {
+    .illustration-dev {
+      left: 2rem;
     }
   }
 }
