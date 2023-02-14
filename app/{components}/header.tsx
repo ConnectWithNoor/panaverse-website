@@ -5,6 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 import Ticker from './ticker';
 
 import Logo from '../../public/logo.svg';
+import Button from './button';
 
 function Header() {
   return (
@@ -45,8 +46,8 @@ function Header() {
               </Link>
             </div>
             <div className='flex items-center space-x-4'>
-              <div className='cursor-default'>About</div>
-              <div className='relative group hover:cursor-pointer flex gap-1 items-center justify-center'>
+              <div className='cursor-default text-xs'>About</div>
+              <div className='relative group hover:cursor-pointer flex gap-1 items-center justify-center text-xs'>
                 Tracks
                 <Image
                   priority
@@ -84,14 +85,14 @@ function Header() {
                   </ul>
                 </div>
               </div>
-              <div className='cursor-default'>FAQs</div>
+              <div className='cursor-default text-xs'>FAQs</div>
             </div>
           </div>
 
           <div>
-            <button className='bg-gray-light-1 text-black px-4 py-1 rounded-md'>
+            <Button className='bg-green-1 text-white px-3 py-1 rounded-md'>
               Join Now
-            </button>
+            </Button>
           </div>
         </div>
       </div>

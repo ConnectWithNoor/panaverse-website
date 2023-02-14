@@ -35,7 +35,7 @@ function Feedback() {
   return (
     <section className='section pb-12 feedback-gradient'>
       <div className='flex flex-col mt-20 text-center'>
-        <div className='space-y-3 mt-20'>
+        <div className='space-y-3 '>
           <h3 className='text-green-1 font-bold text-3xl'>Student Feedback</h3>
           <Slide
             duration={3000}

@@ -12,8 +12,8 @@ function Box({
 }) {
   return (
     <div className='bg-gray-dark-1 border-2 border-green-1 p-6 rounded-lg text-center space-y-3'>
-      <h5 className='text-green-1'>{title}</h5>
-      <div className='flex items-center'>
+      <h5 className='text-green-1 text-lg'>{title}</h5>
+      <div className='flex items-center text-sm'>
         <Image src={image} height={100} width={100} alt='icon' />
         <p>{paragraph}</p>
       </div>

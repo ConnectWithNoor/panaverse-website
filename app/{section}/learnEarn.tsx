@@ -4,28 +4,28 @@ import React from 'react';
 function LearnEarn() {
   return (
     <section className='section w-full '>
-      <div className='flex flex-col md:flex-row items-center'>
-        <div className='relative w-full h-[420px]'>
+      <div className='flex flex-col md:flex-row items-center justify-center'>
+        <div className='relative w-full h-[420px] scale-90'>
           <Image
             src={'/developer.svg'}
             width='300'
             height='300'
             alt='illustration'
-            className='absolute top-5 right-16'
+            className='absolute top-5 left-8'
           />
           <Image
             src={'/wallet.svg'}
             width='120'
             height='120'
             alt='illustration'
-            className='absolute top-3 right-28'
+            className='absolute top-3 right-10'
           />
           <Image
             src={'/money-bag.svg'}
             width='150'
             height='150'
             alt='illustration'
-            className='absolute bottom-6 right-24'
+            className='absolute bottom-6 right-12'
           />
         </div>
         <div className='bg-gray-dark-1 p-6 rounded-lg text-center space-y-3'>

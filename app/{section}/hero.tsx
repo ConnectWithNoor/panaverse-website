@@ -15,11 +15,11 @@ function Hero() {
             (PIAIC)
           </h4>
           <div className='flex flex-col justify-between'>
-            <h3 className='text-5xl font-bold mt-8'>
+            <h3 className='text-3xl font-bold mt-8'>
               Become <span className='text-green-1'>Certified Web 3.0</span> and{' '}
               <span className='text-green-1'>Metaverse</span> Developer
             </h3>
-            <p className='text-lg font-normal mt-5'>
+            <p className='text-base font-normal mt-5'>
               Launch Your Dev Career With Web 3 and Metaverse Getting Ready for
               the Next Generation of the Internet
             </p>
