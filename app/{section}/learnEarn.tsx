@@ -11,7 +11,7 @@ function LearnEarn() {
             width='300'
             height='300'
             alt='illustration'
-            className='absolute top-5 left-8'
+            className='absolute top-5 left-2'
           />
           <Image
             src={'/wallet.svg'}
