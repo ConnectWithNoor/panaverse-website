@@ -86,7 +86,7 @@ function Header() {
             <div className='cursor-default text-xs md:text-lg'>FAQs</div>
           </div>
           <div className='basis-2/5 justify-end inline-flex'>
-            <Button className='bg-green-1 text-white px-3 py-1 rounded-md'>
+            <Button className='bg-green-1 text-white px-3 py-1 cursor-pointer rounded-md'>
               Join Now
             </Button>
           </div>
